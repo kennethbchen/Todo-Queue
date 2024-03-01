@@ -15,9 +15,13 @@ h1 {
     margin: 0px 25%;
 }
 
-#input-container, #output-container {
+.col-flex {
     display: flex;
     flex-direction: column;
+}
+
+.hidden {
+    display: none;
 }
 
 @media only screen and (max-width: 550px) {
