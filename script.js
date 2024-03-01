@@ -25,8 +25,13 @@ function updateInput() {
         return;
     }
 
-    currentTasks.forEach((item) => {
-        inputTextarea.value += item + "\n";
+    currentTasks.forEach((item, index) => {
+        inputTextarea.value += item;
+
+        if (index < currentTasks.length - 1) {
+            // Don't give newline at end of array
+            inputTextarea.value += "\n";
+        }
     });
 }
 
@@ -50,7 +55,7 @@ submitButton.onclick = () => {
     if (inputTextarea.value == "") {
         return;
     }
-    
+
     currentTasks = inputTextarea.value.split("\n");
 
     if (currentTasks.length == 0) {
