@@ -3,17 +3,29 @@ body {
     font-family: sans-serif, serif;
 }
 
-h1 {
+textarea {
+    font-size: 1.25em;
+    resize: none;
+}
+
+button {
+    font-size: 1.25em;
+    padding: 0.25em;
+}
+
+h1, h4, button, br {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+h1, h4 {
     text-align:center;
 }
 
 .col-spacer {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
-}
-
-#global-wrapper {
-    margin: 0px 25%;
 }
 
 .col-flex {
@@ -25,7 +37,11 @@ h1 {
     display: none;
 }
 
-@media only screen and (max-width: 550px) {
+#global-wrapper {
+    margin: 0px 25%;
+}
+
+@media only screen and (max-width: 700px) {
     #global-wrapper {
         margin: 0px 5%;
     }
