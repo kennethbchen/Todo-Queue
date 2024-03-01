@@ -56,9 +56,20 @@ submitButton.onclick = () => {
         return;
     }
 
+    // Process input
+    
     currentTasks = inputTextarea.value.split("\n");
 
-    if (currentTasks.length == 0) {
+    // Trim whitespace and remove empty lines
+    for (var i = currentTasks.length - 1; i >= 0; i--) {
+        currentTasks[i] = currentTasks[i].trim();
+
+        if (typeof currentTasks[i] === "string" && currentTasks[i].length === 0) {
+            currentTasks.splice(i, 1);
+        }
+    }
+
+    if (currentTasks.length === 0) {
         return;
     }
     
