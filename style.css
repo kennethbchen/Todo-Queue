@@ -1,0 +1,27 @@
+body {
+    font-size: 1.5em;
+}
+
+h1 {
+    text-align:center;
+}
+
+.col-spacer {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#global-wrapper {
+    margin: 0px 25%;
+}
+
+#input-container, #output-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 550px) {
+    #global-wrapper {
+        margin: 0px 5%;
+    }
+  }

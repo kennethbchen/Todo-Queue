@@ -29,3 +29,5 @@ inputButton.onclick = () => {
 };
 
 completeTaskButton.onclick = completeTask;
+
+inputButton.onclick();

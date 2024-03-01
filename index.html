@@ -1,12 +1,14 @@
 <!DOCTYPE html>
     <head>
-
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Todo</h1>
 
-        <div id="input-container">
-            <textarea id="input-textarea" rows="10" cols="33">1
+        <div id="global-wrapper">
+            <h1>Todo</h1>
+
+            <div id="input-container">
+                <textarea id="input-textarea" rows="10" cols="33">1
 2
 3
 4
@@ -15,12 +17,19 @@
 7
 8
 9</textarea>
-            <button id="input-button">Submit</button>
-        </div>
+                <br class="col-spacer">
+                <button id="input-button">Submit</button>
+            </div>
 
-        <div id="output-container">
-            <span id="output-current-task"></span>
-            <button id="complete-task-button">Complete</button>
+            <div id="output-container">
+                <h1 id="output-current-task"></h1>
+
+                <div style="display: flex">
+                    <button id="edit-button">Edit</button>
+                    <div style="flex: 20"></div>
+                    <button id="complete-task-button">Complete</button>
+                </div> 
+            </div>
         </div>
     </body>
 
