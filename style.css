@@ -1,16 +1,60 @@
+html {
+    --color-1: rgb(52, 75, 85);
+    --color-2: rgb(52, 58, 63);
+    --color-3: rgb(47, 64, 80);
+
+    --text-color-1: rgb(245, 245, 245);
+    --text-color-2: rgb(160, 160, 160);
+    --text-color-3: rgb(218, 218, 218);
+
+    --border-color-1: rgb(6, 32, 43);
+    --border-color-2: rgb(58, 136, 141);
+
+    --border-radius-1: 20px;
+    --border-radius-2: 10px;
+}
+
 body {
     font-size: 1.5em;
     font-family: sans-serif, serif;
+    color: var(--text-color-1);
+    background-color: var(--color-1);
+}
+
+textarea:focus { 
+    outline: none !important;
+    border-color:var(--border-color-2)
 }
 
 textarea {
     font-size: 1.25em;
     resize: none;
+    background-color: var(--color-2);
+    color: var(--text-color-1);
+    
+    padding: 1em;
+
+    border: solid;
+    border-color: var(--border-color-1);
+    border-radius: var(--border-radius-1);
 }
 
 button {
     font-size: 1.25em;
     padding: 0.25em;
+    background-color: var(--color-2);
+    color: var(--text-color-1);
+
+    border: solid;
+    border-color: var(--border-color-1);
+    border-radius: var(--border-radius-2);
+    
+}
+
+button:hover {
+    background-color: var(--color-3);
+    border-color: var(--border-color-2);
+    cursor: pointer;
 }
 
 h1, h4, button, br {
@@ -19,8 +63,22 @@ h1, h4, button, br {
     user-select: none; /* Standard syntax */
 }
 
+h4 {
+    color: var(--text-color-2);
+}
+
 h1, h4 {
     text-align:center;
+}
+
+::placeholder {
+    color: var(--text-color-3);
+    opacity: 1; /* Firefox */
+  }
+  
+::-ms-input-placeholder { 
+    /* Edge 12 -18 */
+    color: var(--text-color-3);
 }
 
 .col-spacer {
