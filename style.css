@@ -1,6 +1,6 @@
 html {
-    --color-1: rgb(52, 75, 85);
-    --color-2: rgb(52, 58, 63);
+    --color-1: rgb(63, 72, 77);
+    --color-2: rgb(39, 48, 54);
     --color-3: rgb(47, 64, 80);
 
     --text-color-1: rgb(245, 245, 245);
@@ -15,6 +15,7 @@ html {
 }
 
 body {
+    position: relative;
     font-size: 1.5em;
     font-family: sans-serif, serif;
     color: var(--text-color-1);
@@ -29,32 +30,39 @@ textarea:focus {
 textarea {
     font-size: 1.25em;
     resize: none;
-    background-color: var(--color-2);
     color: var(--text-color-1);
-    
     padding: 1em;
-
-    border: solid;
-    border-color: var(--border-color-1);
-    border-radius: var(--border-radius-1);
 }
 
 button {
     font-size: 1.25em;
-    padding: 0.25em;
-    background-color: var(--color-2);
-    color: var(--text-color-1);
-
-    border: solid;
-    border-color: var(--border-color-1);
-    border-radius: var(--border-radius-2);
+    padding: 0.5em;
     
+    color: var(--text-color-1);
+    border-radius: var(--border-radius-2);
 }
 
 button:hover {
     background-color: var(--color-3);
     border-color: var(--border-color-2);
     cursor: pointer;
+}
+
+.border {
+
+    background-color: var(--color-2);
+
+    border: solid;
+    border-color: var(--border-color-1);
+    border-radius: var(--border-radius-1);
+}
+
+.border-2 {
+    background-color: var(--color-2);
+
+    border: solid;
+    border-color: var(--border-color-1);
+    border-radius: var(--border-radius-2);
 }
 
 h1, h4, button, br {
@@ -93,6 +101,10 @@ h1, h4 {
 
 .hidden {
     display: none;
+}
+
+#output-current-task {
+    padding: 0.5em 0.25em;
 }
 
 #global-wrapper {

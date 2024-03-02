@@ -8,19 +8,22 @@
 
             <div id="input-container" class="col-flex">
                 <h1>Todo Queue</h1>
-                <textarea id="input-textarea" rows="10" cols="30" spellcheck="false" placeholder="List tasks (one per line)"></textarea>
+                <textarea id="input-textarea" class="border" rows="10" cols="30" spellcheck="false" placeholder="List tasks (one per line)"></textarea>
                 <br class="col-spacer">
-                <button id="input-button">Submit</button>
+                
+                <button id="input-button" class="border-2">Submit</button>
             </div>
 
             <div id="output-container" class="col-flex hidden">
                 <h4>Todo Queue</h4>
-                <h1 id="output-current-task"></h1>
+                <div id="current-task-container">
+                    <h1 id="output-current-task" class="border-2"></h1>
+                </div>
 
                 <div style="display: flex">
-                    <button id="edit-button">Edit</button>
+                    <button id="edit-button" class="border-2">Edit</button>
                     <div style="flex: 20"></div>
-                    <button id="complete-task-button">Complete</button>
+                    <button id="complete-task-button" class="border-2" >Complete</button>
                 </div> 
             </div>
         </div>
